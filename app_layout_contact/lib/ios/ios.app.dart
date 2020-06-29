@@ -1,19 +1,15 @@
+import 'package:app_layout_contact/ios/styles.dart';
+import 'package:app_layout_contact/ios/views/home.view.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 
-class IosApp extends StatelessWidget {
-  // This widget is the root of your application.
+class IOSApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoApp(
-      title: 'Flutter Demo',
-      // theme: ThemeData(
-      //   primarySwatch: Colors.blue,
-      //   visualDensity: VisualDensity.adaptivePlatformDensity,
-      // ),
-      home: Container(
-        child: Text("Android App"),
-      ),
+      title: 'Contacts',
+      debugShowCheckedModeBanner: false,
+      theme: iosTheme(),
+      home: HomeView(),
     );
   }
 }
